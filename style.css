@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    /* displaying things next to each other */
+    display: flex;
+    /* things come back into columns */
+    flex-direction: column;
+    /* everthing goes to the center horizontally */
+    align-items: center;
+    /* bringing them to the center vertically */
+    height: 100vh;
+    justify-content: center;
+    background: url("https://images.unsplash.com/photo-1578923931302-7fd9b3495be7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+    background-position: center;
+    background-size: cover;
+    /* removing the scrollbar */
+    overflow: hidden;
+}
+
+h2{
+    /* making all letters capital */
+    text-transform: uppercase;
+    /* increasing space between characters */
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.clock{
+    /* everthing is next to each other */
+    display: flex;
+}
+
+.clock div{
+    /* space between the texts */
+    margin: 5px;
+    position: relative;
+}
+
+.clock span{
+    width: 100px;
+    height: 80px;
+    /* background colour of the times */
+    background-color: lightslategray;
+    opacity: .8;
+    /* change color of the text */
+    color: ghostwhite;
+    /* take everything to center */
+    display: flex;
+    /* everything to the center horizontally */
+    justify-content: center;
+    /* everything to the center vertically */
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.clock .text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: lightsteelblue;
+    opacity: 0.8;
+}
+
+.clock #ampm{
+    bottom: 0;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background: lightskyblue;
+}
